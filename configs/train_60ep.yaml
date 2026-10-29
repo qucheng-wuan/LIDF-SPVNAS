@@ -1,0 +1,30 @@
+training:
+  budget_unit: epochs
+  nepochs: 60
+  max_steps: null
+  nepoch_decay: 60
+  lr: 0.001
+  lidf_lr_factor: 0.1
+  backbone_lr_factor: 0.1
+  micro_batch: 2
+  accumulation_steps: 4
+  batch_size: 32
+  do_valid: true
+  smoke_train_images: 0
+  deterministic: false
+  allow_tf32: false
+  collect_metrics: false
+  fast_preprocessing: true
+  detect_anomaly: false
+  allow_legacy_rng_resume: false
+  validate_before_resume: false
+  loader_timeout_seconds: 120
+  process_group_timeout_seconds: 600
+spvnas:
+  pretrained: true
+  freeze_existing: false
+  runtime_checks: false
+  allow_tf32: false
+resume: null
+checkpoint_path: null
+debug: false

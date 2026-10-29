@@ -1,0 +1,67 @@
+{
+  "variant": "spvnas_fusion_20g",
+  "epoch": 57,
+  "global_step": 80940,
+  "bytes": 301033012,
+  "sha256": "c9abcf490a20db65b54d4bda08681db41a546808b2801d96b24beb04607ce6de",
+  "selection_policy": "equal mean rank of six real-val metrics among 13 retained checkpoints",
+  "metrics_recomputed_from_csv": {
+    "syn_known.csv": {
+      "images": 532,
+      "rmse": 0.014294858888199525,
+      "abs_rel": 0.017123747739986397,
+      "mae": 0.009313148293093624,
+      "a1": 0.9297869577701904,
+      "a2": 0.9712500501265644,
+      "a3": 0.994502671847218
+    },
+    "real_known.csv": {
+      "images": 173,
+      "rmse": 0.03580222307365237,
+      "abs_rel": 0.04565723448173504,
+      "mae": 0.027261996262227698,
+      "a1": 0.692307544239619,
+      "a2": 0.8981703110308402,
+      "a3": 0.9760729637793722
+    },
+    "real_novel.csv": {
+      "images": 113,
+      "rmse": 0.049664022549327495,
+      "abs_rel": 0.08081517596028548,
+      "mae": 0.0440824173959549,
+      "a1": 0.3344017368338516,
+      "a2": 0.6135251461363406,
+      "a3": 0.9720810709801395
+    },
+    "syn_novel.csv": {
+      "images": 408,
+      "rmse": 0.03630748949488442,
+      "abs_rel": 0.05387130328088853,
+      "mae": 0.02976008193503481,
+      "a1": 0.6039670225940177,
+      "a2": 0.8457865544923526,
+      "a3": 0.9892249382009694
+    }
+  },
+  "source_experiment": "lidf20g_recovery_20261014_1057",
+  "evaluation_experiment": "lidf20g_all_epochs_eval_20261015_0808",
+  "checkpoint_filename": "epoch_57.pth",
+  "training_total_epochs": 60,
+  "retained_checkpoint_epochs": [
+    9,
+    37,
+    38,
+    42,
+    51,
+    52,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60
+  ],
+  "model_scope": "LIDF Stage 1 + official SemanticKITTI SPVNAS 20GMACs",
+  "weights_in_git": false
+}

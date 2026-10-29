@@ -1,0 +1,3 @@
+base_log_dir: runs/spvnas_fusion/random_20g
+spvnas:
+  pretrained: false

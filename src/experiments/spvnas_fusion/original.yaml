@@ -1,0 +1,102 @@
+trainer_name: spvnas
+exp_type: train
+base_log_dir: runs/spvnas_fusion/original
+log_name: stage1
+custom_postfix: ''
+resume: null
+gpu_id: null
+vis_gpu: 0,1,2,3
+mask_type: all
+dataset:
+  type: cleargrasp
+  cleargrasp_root_dir: data/cleargrasp
+  omniverse_root_dir: null
+  use_data_augmentation: true
+  img_width: 320
+  img_height: 240
+  split_ratio: 1.0
+  omni_corrupt_all: true
+  corrupt_table: true
+  depth_aug: false
+  corrupt_all_pix: false
+  ellipse_dropout_mean: 20
+  ellipse_gamma_shape: 10.0
+  ellipse_gamma_scale: 1.0
+model:
+  stable_ray_ties: true
+  rgb_model_type: resnet
+  rgb_embedding_type: ROIAlign
+  rgb_in: 3
+  rgb_out: 32
+  roi_inp_bbox: 8
+  roi_out_bbox: 2
+  pnet_model_type: twostage
+  pnet_in: 6
+  pnet_out: 128
+  pnet_gf: 32
+  pnet_pos_type: rel
+  pos_encode: true
+  intersect_pos_type: abs
+  multires: 8
+  multires_views: 4
+  offdec_type: IEF
+  n_iter: 2
+  probdec_type: IMNET
+  imnet_gf: 64
+  scatter_type: Maxpool
+  maxpool_label_epo: 6
+  variant: original
+grid:
+  res: 8
+  miss_sample_num: 20000
+  valid_sample_num: 10000
+  offset_range:
+  - 0.0
+  - 1.0
+training:
+  collect_metrics: false
+  batch_size: 32
+  valid_batch_size: 1
+  nepochs: 60
+  nepoch_decay: 60
+  decay_gamma: 0.1
+  nepoch_ckpt: 1
+  log_interval: 5
+  train_vis_iter: 4
+  val_vis_iter: 8
+  lr: 0.001
+  do_valid: true
+  optimizer_name: Adam
+  scheduler_name: StepLR
+  micro_batch: 2
+  accumulation_steps: 4
+  max_steps: 10000
+  decay_steps: 10000
+  eval_interval: 500
+  backbone_lr_factor: 0.1
+  num_workers: 4
+loss:
+  pos_loss_type: single
+  pos_w: 100.0
+  prob_loss_type: ray
+  prob_w: 0.5
+  surf_norm_w: 10.0
+  surf_norm_epo: 0
+dist:
+  ddp: true
+  dist_url: env://
+  dist_backend: nccl
+  nodes_num: 1
+  node_rank: 0
+  ngpus_per_node: 4
+  world_size: null
+  global_gpu_id: null
+seed: 2026
+spvnas:
+  repo_dir: third_party/spvnas
+  assets_dir: runs/spvnas_fusion/assets
+  pretrained: true
+  freeze_existing: false
+  spatial_shape: [64, 64, 64]
+  voxel_size: 0.05
+  coordinate_scale: 1.0

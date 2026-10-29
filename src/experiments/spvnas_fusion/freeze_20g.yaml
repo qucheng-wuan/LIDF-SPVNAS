@@ -1,0 +1,4 @@
+base_log_dir: runs/spvnas_fusion/frozen_20g
+checkpoint_path: checkpoints/lidf_stage1.pth
+spvnas:
+  freeze_existing: true

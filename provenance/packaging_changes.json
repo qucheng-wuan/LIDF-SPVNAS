@@ -1,0 +1,89 @@
+{
+  "note": "src Python/CUDA code is unchanged; adapted configs/CLIs and documentation are listed below. Historical entrypoints are archived.",
+  "changed_from_snapshot": {
+    "src/experiments/spvnas_fusion/freeze_65g.yaml": {
+      "historical": "c52ecff16f2982e0fe9f9265553413f55fc9db53bcefebe6e19218173bfa6759",
+      "release": "f300e874e68a53c252251198d1cc33c02dc69a17288adb0668ff131efe0c96f7"
+    },
+    "src/experiments/spvnas_fusion/spvnas_fusion_20g.yaml": {
+      "historical": "67cc545a6634271c1ea874eb481b38031060ea149e3f1fe5a32d4c66102eb995",
+      "release": "722a38be81f433db7877da6d57f536c8fd2da973a3ea43bf29171516d540311d"
+    },
+    "src/experiments/spvnas_fusion/spvnas_fusion_20g_eval.yaml": {
+      "historical": "cea5f665cb33bf10c82a45f57d781d0c51803f9d489b7f3a8533f8b0a2c8a4b4",
+      "release": "de2548e541b03750037de9a131c49e6851b6ec94e7aef5f36ed1518a3ffa71f5"
+    },
+    "src/experiments/spvnas_fusion/spvnas_fusion_65g.yaml": {
+      "historical": "a4465a6b7decc31fdd0f1edbe97bcf8bc7cb9e2df154de8395e42de8ecf13028",
+      "release": "88952ee50dbcb07f663f5697c898d0120edfd5e021e888d928278f25bf0e5fb6"
+    },
+    "src/experiments/spvnas_fusion/original_eval.yaml": {
+      "historical": "50a73419fa3789cc83a5d924a8790e8ed3452d7240f656713a5bb77d1c13e1fe",
+      "release": "16a682d30f566c5941fe4f5f9d397b647255f09dffc2f7175dd8f0937df71dc6"
+    },
+    "src/experiments/spvnas_fusion/random_65g.yaml": {
+      "historical": "7862150ebfebb015281e2d9eab7498a3b2cebe2f11d4aef93d84af341a078826",
+      "release": "4bf2c1b2907fe593b2e3c525a81ce1363e87594bc71d80c74a39413f5869b6f1"
+    },
+    "src/experiments/spvnas_fusion/spvnas_fusion_65g_eval.yaml": {
+      "historical": "96876ab82d3b63870b5a5c3c3d8d3996598716c3b8b3abd0b502bf2d9c50b634",
+      "release": "474ca5a65e4ac1514995cd45045dddd872027c6b4acfcd548a810d957665d340"
+    },
+    "src/experiments/spvnas_fusion/random_20g.yaml": {
+      "historical": "d62f201ba815c1e195915ab396a59d454d2223236e8465f38837e144eaa01cb2",
+      "release": "b91c3b657e717d83d3ae05139ef56fe04ce662f2086aaa3aa38d93008c95fc8e"
+    },
+    "src/experiments/spvnas_fusion/freeze_20g.yaml": {
+      "historical": "144abcf66631729dd398f5005d5a3c8d101332c471964461ad28e621de0168a9",
+      "release": "22a0b30bf00e73c2a3f202179ea45b7666d3dd187e07bbcdb651ca7d52f6494c"
+    },
+    "src/experiments/spvnas_fusion/original.yaml": {
+      "historical": "b32db5485eaea68816ab9af3e10dd4e6d72be03024f8bc6a86a15a4338433770",
+      "release": "cb6ef56fdc9f911bf609f5c38a18dd7584561c8a6a88cd807316bc912f8b842b"
+    },
+    "scripts/spvnas/launch.py": {
+      "historical": "28fbd4de582ee5b19226b34ffe8cbf7da2f3d2ef3e7d5dfa585d4d1a33f45ccc",
+      "release": "106431e413cd31f12a954051ef9f490661d3019e581db4ffd42c14bb369ab432"
+    },
+    "scripts/spvnas/validate.py": {
+      "historical": "6f86ae8e97a3fbb463d06b20f5d873594e8547e86a1cd06288eb7df008b5e9c1",
+      "release": "c2df2b5d76abd94577f3b7f5a2c755ea6378e89da7b2a5bfba48a8a98526e602"
+    },
+    "scripts/spvnas/eval_all_sets.py": {
+      "historical": "6952569cfceb01932e89ec0b0d533f955407be7ddebf81cb7b02fe5791d9feb5",
+      "release": "84f91013d9c2dc59f7d04e567724d58e9fcf1046f86635088fdf39ab3475b2b2"
+    },
+    "scripts/spvnas/fetch_weights.py": {
+      "historical": "7134492d7f6699ca9e5ecbe04d0cfd23732e515bc239f461521e6a1e051b5123",
+      "release": "cfdbfaed72a05c4c17d46a8d3aa7b940dff644952d71afb41e744600db603ee0"
+    },
+    "scripts/spvnas/benchmark.py": {
+      "historical": "5cabd50b93f3dd4e69263deab9b10bc74e47cb0a3299441d983b3e9be2dfeff7",
+      "release": "a96b4bf26cacbd7a5e808d4c8b5ccaca9aa86096736bd1e34665f4d354b051df"
+    },
+    "scripts/spvnas/check_sparse_api.py": {
+      "historical": "9212a2aa1e7408b61fb2290bebb536bffbc91cbfcfea92ede58858e45f56c8c9",
+      "release": "3af53f254aa3c947becfd3989a5547c273b673bca55329d29b81a4c49d3c59b6"
+    },
+    "scripts/spvnas/evidence.py": {
+      "historical": "1b2b938a642fe06c1f8f551753722b7bb027540eacfded1845931c6f567056e5",
+      "release": "b073d2a24c9a6e16132adc6214c3c9d36a8162dfa72203e58ee12e693b29c294"
+    },
+    "scripts/spvnas/entry.py": {
+      "historical": "6a5ff9bca020e66acd6eebdeb145959fbf68ff666fe4b5735baa7f0b754c33a0",
+      "release": "5a5dd52b0e75c38dc64ddb05b78aef12617d38a11c86783773c1a0e98143b2b1"
+    },
+    "scripts/spvnas/eval_checkpoint.py": {
+      "historical": "67a2844cac0438a1eb739401e7e0d2b8c3175c70557a27fce575483f1c0e2e89",
+      "release": "936f9f65924d43caa0d8fc30276163c6bdade6b046b8da214fc4fb73752e5612"
+    },
+    "docs/UPSTREAM_README.md": {
+      "historical": "2bc557844d8000a70cd5506a46b4293a17404786581b4fc03e2fcec1cc663ba9",
+      "release": "d7da40b80d5cea7b2dc544095f210da74b46151739449fc780909a751c857ed5"
+    },
+    "configs/train_60ep.yaml": {
+      "historical": "dd54f4a71a6bc8b63016c1f33c45bddf541685e4200ca24904a3fc5831740b6c",
+      "release": "dec5bf8358551eaa185185cf4844d47e0a5284f1c0cafdcd132f0cd42d924cc7"
+    }
+  }
+}

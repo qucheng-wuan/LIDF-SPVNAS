@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-29",
+  "source_experiment": "lidf20g_recovery_20261014_1057",
+  "cpu_tests": {
+    "release_paths_config_resume": 3,
+    "mapping": 4,
+    "ray_selection": 2
+  },
+  "python_syntax_files": 104,
+  "syntax_errors": 0,
+  "gpu_evaluation": {
+    "variant": "spvnas_fusion_20g",
+    "checkpoint_epoch": 57,
+    "dataset": "real-val",
+    "images": 173,
+    "skipped": 0,
+    "metrics": {
+      "rmse": 0.035802223087110785,
+      "abs_rel": 0.04565723458401902,
+      "mae": 0.027261996679438676,
+      "a1": 0.692307544239619,
+      "a2": 0.8981703110308402,
+      "a3": 0.9760729637793722
+    },
+    "difference_from_historical_csv": {
+      "rmse": 1.3458414938050112e-11,
+      "abs_rel": 1.0228397989697768e-10,
+      "mae": 4.172109775713029e-10,
+      "a1": 0.0,
+      "a2": 0.0,
+      "a3": 0.0
+    },
+    "hardware": "NVIDIA GeForce RTX 3090",
+    "new_training_performed": false
+  },
+  "sparse_api_checks": {
+    "torchsparse": "2.1.0",
+    "cpu_bn": {
+      "conversion": "passed",
+      "feature_equivalence": "passed",
+      "coordinate_cache_preservation": "passed",
+      "input_gradient": "passed"
+    },
+    "SemanticKITTI_val_SPVNAS@20GMACs": {
+      "supernet_cpu_constructor": "passed",
+      "manual_select": "passed",
+      "determinize_strict_load": "not_run_requires_idle_gpu"
+    },
+    "SemanticKITTI_val_SPVNAS@65GMACs": {
+      "supernet_cpu_constructor": "passed",
+      "manual_select": "passed",
+      "determinize_strict_load": "not_run_requires_idle_gpu"
+    }
+  },
+  "limitations": [
+    "No new four-GPU training or full GPU resume run during packaging",
+    "Installer not rerun into a clean environment; validation used the existing pinned environment",
+    "Historical upstream whitespace and CRLF preserved; whitespace checks limited to new release files"
+  ],
+  "generated_at": "2026-10-29T23:48:03.375206+08:00"
+}

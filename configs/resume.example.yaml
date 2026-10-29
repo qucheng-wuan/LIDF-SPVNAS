@@ -1,0 +1,8 @@
+# Use a NEW output directory. Resume only at a completed epoch boundary.
+base_log_dir: runs/spvnas_fusion/20g_resumed
+resume: runs/spvnas_fusion/20g_60ep/ckpt/stage1/latest_network.pth
+checkpoint_path: null
+training:
+  resume_best_path: runs/spvnas_fusion/20g_60ep/ckpt/stage1/best_network.pth
+  allow_legacy_rng_resume: false
+  validate_before_resume: false

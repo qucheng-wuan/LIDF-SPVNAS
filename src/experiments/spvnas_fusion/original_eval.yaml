@@ -1,0 +1,5 @@
+exp_type: test
+checkpoint_path: runs/spvnas_fusion/original/ckpt/stage1/best_network.pth
+base_log_dir: runs/spvnas_fusion/original/evaluation
+dist:
+  ddp: false
